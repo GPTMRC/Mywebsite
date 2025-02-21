@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header with Image</title>
+    <style>
+           body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: linear-gradient(to bottom, #414040, #000000);
+            height: 100vh;
+        }
+
+        header {
+            background-color: #f1e642;
+            color: rgb(39, 31, 31);
+            padding: 20px;
+            font-size: 24px;
+            height: 80px; 
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        nav {
+            position: absolute;
+            right: 20px;
+            top: 70px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(39, 31, 31);
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            border: 1px solid #75770e; /* Added Black Border */
+            border-radius: 25px;
+            font-size: 2;
+        }
+
+        nav ul li a:hover {
+            background-color: #000000;
+            color: #f1e642;
+            border-radius: 30px;
+            border: 1px solid #000000; /* Thickens Border on Hover */
+        }
+
+        .corner-image {
+            position: absolute;
+            top: 75px; 
+            left: 100px;
+        }
+
+        .corner-image img {
+            width: 400px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+
+        .introduction {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    opacity: 0;
+    animation: fadeInBounce 2s ease-in-out forwards;
+}
+
+.introduction h1 {
+    font-size: 35px; /* Reduced for better balance */
+}
+
+.introduction p {
+    font-size: 18px; /* Smaller text for readability */
+    line-height: 1.5;
+    text-align: justify;
+}
+
+        @keyframes fadeInBounce {
+            0% {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-30px);
+            }
+            50% {
+                opacity: 0.5;
+                transform: translateX(-50%) translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+        footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1e642;
+        color: rgb(39, 31, 31);
+        text-align: center;
+        padding: 10px 0;
+        font-weight: bold;
+    }
+    </style>
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="social.html">Social</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="corner-image">
+        <img src="PROFILE.png" alt="Profile Picture">
+    </div>
+
+    <div class="introduction">
+        <h1>About Me</h1>
+        <p>Hi, I'm Mark Christian M. Baylon, a BSIT student at Pateros Technological College, born on March 30, 2004, and currently living in Taguig City. I'm passionate about technology and always eager to learn new things, especially in IT, programming, and web development. Currently, I'm exploring Git, GitHub, and Python while improving my skills.
+
+            Outside of tech, I enjoy music, gaming, and creative writing. I'm always looking for opportunities to grow and develop my skills.
+            
+            Excited for what the future holds in the world of IT!
+            
+            </p>
+    </div>
+
+    <footer>
+        <p>All rights reserved © 2025</p>
+    </footer>
+
+</body>
+</html>
